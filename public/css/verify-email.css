@@ -1,0 +1,165 @@
+:root {
+    --white: #fff;
+    --blue: #0073e6c4;
+    --darkBlue: #005bb5;
+    --lightBlue: #e3f2fd;
+    --black: #333;
+    --gray: #777;
+    --shadow: rgba(0, 115, 230, 0.3);
+    --borderColor: #ccc;
+    --bgColor: #e4f4ff;
+    --inputBg: #f8f8f8;
+    --btnBg: #0073e6c4;
+    --btnHover: #005bb5;
+}
+
+/* 🔹 General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bgColor);
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Container */
+.container {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px var(--blue);
+    width: 400px;
+    text-align: center;
+}
+
+/* 🔹 Title */
+.title {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--black);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--btnBg);
+    padding-bottom: 5px;
+}
+
+/* 🔹 Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* 🔹 Form Elements */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+    width: 100%;
+}
+
+/* 🔹 Email Input + OTP Button */
+.email-input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--borderColor);
+    border-radius: 8px;
+    background: var(--inputBg);
+    padding: 5px;
+
+    position: relative;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+}
+
+/* 🔹 Centered OTP Button */
+.send-otp-btn {
+    /* padding: 8px 12px; */
+    font-size: 12px;
+    background-color: var(--btnBg);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    width:60px; 
+    position: absolute;
+    right: 10px;
+    bottom: 4px;
+}
+
+.send-otp-btn:hover {
+    background-color: var(--btnHover);
+}
+
+/* 🔹 Submit Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--btnBg);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: var(--btnHover);
+}
+
+/* 🔹 Responsive */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .send-otp-btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+#otp{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid var(--borderColor);
+    border-radius: 8px;
+    background: var(--inputBg);
+    padding: 10px;
+    width: 100%
+}

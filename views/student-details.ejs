@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Student Details</title>
+    <link href="/css/student-details.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="title">Student Details</h2>
+
+        <table class="details-table">
+            <tr>
+                <td class="table-label">Profile:</td>
+                <td class="table-data">
+                    <img src="<%= student.profileImageURL %>" alt="Profile" class="profile-image">
+                    <a href="/edit-profile/<%= student._id %>" class="edit-link">Edit</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="table-label">Full Name:</td>
+                <td class="table-data">
+                    <span>
+                        <%= student.fullName %>
+                    </span>
+                    <a href="/edit/<%= student._id %>/fullName" class="edit-link">Edit</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="table-label">Email:</td>
+                <td class="table-data">
+                    <span>
+                        <%= student.email %>
+                    </span>
+                    <a href="/edit/<%= student._id %>/email" class="edit-link">Edit</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="table-label">Father's Name:</td>
+                <td class="table-data">
+                    <span>
+                        <%= student.fathersName %>
+                    </span>
+                    <a href="/edit/<%= student._id %>/fathersName" class="edit-link">Edit</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="table-label">Mother's Name:</td>
+                <td class="table-data">
+                    <span>
+                        <%= student.mothersName %>
+                    </span>
+                    <a href="/edit/<%= student._id %>/mothersName" class="edit-link">Edit</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="table-label">Aadhar Number:</td>
+                <td class="table-data">
+                    <span>
+                        <%= student.aadharNumber %>
+                    </span>
+                    <a href="/edit/<%= student._id %>/aadharNumber" class="edit-link">Edit</a>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="table-label">Semester:</td>
+                <td class="table-data">
+                    <span>
+                        <%= student.semester %>
+                    </span>
+                    <a href="/edit/<%= student._id %>/standard" class="edit-link">Edit</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

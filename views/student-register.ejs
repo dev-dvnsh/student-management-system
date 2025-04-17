@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Register</title>
+  <link href="/css/student-register.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<div class="wrapper">
+  <img id="logo" src="uploads/logo.jpg.png">
+  <form action="/student-register" method="post" class="login-form">
+
+    <div class="input-box">
+      <input type="name" name="fullName" id="fullName" required>
+      <label>Username</label>
+      <span class="username-icon"></span>
+    </div>
+    
+    <div class="input-box">
+      <input type="email" name="email" id="email" required>
+      <label>Email</label>
+      <span class="email-icon"></span>
+    </div>
+
+    <div class="input-box password-box">
+      <input type="password" name="password" id="password" required>
+      <label>Password</label>
+      <div class="toggle-password">
+        <input type="checkbox" id="showPassword">
+        <label for="showPassword"></label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn">Submit</button>
+    <p class="register-link">Already have an account? <a href="/student-login">Login</a></p>
+    <p class="register-home">Go back to home? <a href="/">Home</a></p>
+    
+    <% if (locals.error) { %>
+      <p style="text-align: center; color: red;"><%= error %></p>
+    <% } %>
+
+  </form>
+</div>
+
+<script>
+  document.getElementById("showPassword").addEventListener("change", function() {
+    document.getElementById("password").type = this.checked ? "text" : "password";
+  });
+</script>
+
+</body>
+
+</html>
