@@ -141,8 +141,8 @@ We tested the project using a mix of:
 
 - 🧪 Unit Testing (modules like login, OTP)
 - 🔄 Integration Testing (frontend <-> backend)
-- 🧱 System Testing (complete user flow)
-- 🧑‍🔬 Acceptance Testing (tested live with demo users)
+- System Testing (complete user flow)
+- ‍🔬 Acceptance Testing (tested live with demo users)
 
 We followed both black-box and white-box approaches to cover all critical paths and edge cases.
 
