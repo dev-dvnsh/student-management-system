@@ -24,7 +24,7 @@ Our aim wasn’t just to fulfill academic requirements, but to actually solve a 
 
 ## 🧩 Features
 
-### 👨‍🎓 Student Portal
+### ‍🎓 Student Portal
 
 - Login & view personal profile
 - Track attendance (with warnings if it’s short)
@@ -34,7 +34,7 @@ Our aim wasn’t just to fulfill academic requirements, but to actually solve a 
 ![Student Profile](assets/student_profile.png)
 ![Short Attendance Alert](assets/student_data_form.png)
 
-### 🧑‍💼 Admin Panel
+### ‍💼 Admin Panel
 
 - Dashboard with all student records
 - Auto-assign roll numbers
@@ -43,7 +43,7 @@ Our aim wasn’t just to fulfill academic requirements, but to actually solve a 
 
 ![Admin Portal](assets/admin_portal.png)
 
-### 📧 Secure Authentication
+### Secure Authentication
 
 - Email verification during signup
 - OTP-based password recovery system
@@ -114,7 +114,7 @@ Example student object:
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 ### 🧾 Prerequisites
 
@@ -164,14 +164,6 @@ The codebase is modular, so adding these will be easy in future iterations.
 | Home                      | Login                                        | Admin                                   |
 | ------------------------- | -------------------------------------------- | --------------------------------------- |
 | ![Home](assets/Home.jpeg) | ![Student Login](assets/Student%20Login.png) | ![Admin Panel](assets/admin_portal.png) |
-
----
-
-## 🙌 Acknowledgements
-
-- **Prof. Tej Singh** – For his guidance, patience, and motivation throughout the journey.
-- Shoutout to our amazing team who turned ideas into real code.
-- Special thanks to open-source tools like Postman, VSCode, MongoDB Compass, and browser dev tools.
 
 ---
 
