@@ -32,7 +32,7 @@ Our aim wasn’t just to fulfill academic requirements, but to actually solve a 
 
 ![Student Login](assets/Student%20Login.png)
 ![Student Profile](assets/student_profile.png)
-![Short Attendance Alert](assets/student_data_form.png)
+![Short Attendance Alert](assets/student_data_form.jpeg)
 
 ### ‍💼 Admin Panel
 
